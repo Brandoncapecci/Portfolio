@@ -9,4 +9,7 @@ gem 'dm-core'
 gem 'dm-migrations'
 gem 'dm-validations'
 gem 'dm-timestamps'
-gem 'dm-sqlite-adapter'
+
+group :development, :test do
+  gem 'dm-sqlite-adapter'
+end
