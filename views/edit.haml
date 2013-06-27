@@ -1,0 +1,17 @@
+%header
+  .center
+    %a.logo(href="/")   
+      //%img.logo(src="/images/logo.png")
+      %img.logo(src="/images/infinite-black.png")
+    %ul
+      %li.right
+        %button.update{:data => {:id => @post.id} }
+          Update
+
+%section
+  .center
+    %article
+      %input#title{:name => "title", :type => "text", :placeholder => "Title", :value => @post.title}
+      %br
+      %textarea#body{:name => "body", :placeholder => "Body (Markdown supported)"}
+        = @post.body

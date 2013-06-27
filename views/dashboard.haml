@@ -1,0 +1,12 @@
+%section
+  .center
+    - @posts.each do |post| 
+      %article
+        = post.title
+        %button.delete.right{:data => {:id => post.id} }
+          Delete    
+        %a{:href => "/edit/"+post.id.to_s}            
+          %button.edit.right{:data => {:id => post.id} }
+            Edit        
+        %br
+        = post.body

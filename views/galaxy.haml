@@ -1,0 +1,12 @@
+=haml :_header
+
+.bg-image{:style => "background-image: url('/images/galaxy.jpg')"}
+
+.center 
+  %article
+    %h1 Creating a galaxy in HTML5 
+    %h2 April 27th, 2013
+    :markdown
+      Today we will be making a basic galaxy visualization inspired by the one seen on the wonderfully flat [Layervault](http://cosmos.layervault.com). The implementation is actually pretty succinct (just 80 lines of JavaScript) and should familize you with the basic concepts necessary to start working with Canvas. I'll get around to explaining the concepts later - but in the meantime, you can grab the source here or test it on 
+    %canvas(id="canvas" width="600" height="260")
+

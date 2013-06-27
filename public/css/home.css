@@ -1,0 +1,117 @@
+.fifth {
+  width: 25%;
+  float: left;
+  text-align: left;
+  position: relative;
+  top: 15px;
+}
+.fifth img {
+  height: 10px;
+  margin-right: 2px;
+}
+
+
+.orange {
+  background-color: #EEE;/*rgba(125,221,118,1);/*rgba(48,48,48,1);*/
+}
+
+.miles-run, .tea {
+  position: relative;
+  top: 18px;
+}
+.tea img, .miles-run img {
+  height: 50px;
+  float: left;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+.number {
+  font-size: 28px;
+}
+
+
+.recent-thoughts ul li {
+  font-size: 12px;
+}
+.recent-thoughts ul li span {
+  color:rgb(125,221,118);
+}
+
+.green {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+
+  font-size: 16px;
+  color: #333;
+  background-color: #FFF;/*rgb(48,48,48);*/
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  border: 2px solid rgba(0,0,0,.2);
+  padding: 9px 15px;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+
+
+.logo {
+  position: absolute;
+  top: 8px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.weekday {
+  float: right;
+  color:#B3B3B3;
+  position: relative;
+  top: 8px;
+  right: 8px;  
+}
+
+section.green {
+  background-color: rgb(48,48,48);
+}
+
+nav ul {
+  margin-left: 35px;
+}
+
+nav ul li {
+  float: left;
+  padding: 10px;
+  font-size: 13px; /*16*/
+  font-weight: 600;
+  position: relative;
+  top: 1px;
+
+  /*8 - font none*/
+}
+
+
+nav {
+  float: right;
+/*  opacity: 0;
+  transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;*/   
+}
+  /*position: relative;
+  right: 220px;*/
+
+nav.open {
+  /*right: 0;*/
+  opacity: 1;
+}

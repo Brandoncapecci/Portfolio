@@ -1,0 +1,13 @@
+!!!5  
+%html  
+  %head  
+    %title 
+      = @title  
+    %link(rel="icon" href="images/favicon.ico" type="image/x-icon")  
+    - @css.each do |css|
+      %link(rel="stylesheet" href="/css/#{css}.css")  
+    - @js.each do |js|
+      %script(type="text/javascript" src="/javascript/#{js}.js") 
+  %body
+    =yield  
+  
