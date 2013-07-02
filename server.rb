@@ -19,8 +19,8 @@ end
 
 get '/' do
     @css = ['core', 'home', 'equalizer']
-    @js = ['jquery', 'home']    
-    @title = "Home" 
+    @js = ['jquery', 'home', 'parallax']    
+    @title = "Brandon Capecci's Portfolio" 
     haml :posts
 end
 

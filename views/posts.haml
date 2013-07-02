@@ -1,58 +1,137 @@
 =haml :_header
 
-%section
+%a.anchor#tagline
+
+%section.tagline
   .center 
-    %img.tools(src="images/tools.png")
-    %h1
-      I am a front-end engineer obsessed with simplicity currently living in Boston.
-    %button
-      See work
-    %button
-      More about me
+    .parallax
+      %img.tools(src="images/tools.png")
+      %h1
+        I am a front-end engineer obsessed with simplicity currently living in Boston.
+      /%a(href="#work")
+      / %button
+      /    See work
+      %a{:href => "resume.pdf", :target => "_blank"}
+        %button
+          View CV
 
-
-  .green
-    .center
-      .fifth.recent-thoughts 
-        /%img(src="/images/blog.png")
+%section.blog  
+  .center    
+    %ul
+      %h1.title
         Recent Thoughts
-        %ul
-          %li 
-            %span •
-            Redesigning Hackernews
-          %li 
-            %span •
-            HTML5 canvas galaxy
 
-      .fifth.music
-        .equalizer
-          %ul.column
-            %li.bar
-          %ul.column
-            %li.bar
-          %ul.column
-            %li.bar
-          %ul.column
-            %li.bar
-          %ul.column
-            %li.bar
-            
-        .currently-listening 
-          %img(src="/images/play-dark.png")
-          Currently listening
-        .title ZVVL
-        .artist CHVRCHES
+      %li
+        %img(src="images/hackernews.png")            
+        %h2 Redesigning Hackernews 
+        %h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        %button.read-more Read More
 
-      .fifth.miles-run
-        %img(src="/images/running.png")
-        .last-run Last run
-        .number 4.2 mi
+      %li  
+        %img(src="images/ship.png")            
+        %h2 HTML5 canvas galaxy
+        %h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        %button.read-more Read More
+      -#        
+        %li  
+          %img(src="images/king.png")            
+          %h2 Is the web a meritocracy?
+          %h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          %button.read-more Read More        
+        %li
+          %img(src="images/colour.png")      
+          %h2 Colour Psychology
+          %h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          %button.read-more Read More        
 
-      .fifth.tea
-        %img(src="/images/tea.png")
-        .cups-of-tea Cups of tea
-        .number 30
-      /klout score
+%section.work#work
+  .center 
+    %ul
+      %h1.title
+        Work
+
+      %li
+        %img.tools(src="images/feewave.png")            
+        %h2 FeeWave
+
+      %li
+        %img.tools(src="images/coloursio.png")            
+        %h2 Colours.io
+
+      %li
+        %img.tools(src="images/askio.png")            
+        %h2 Ask.io
+
+      %li
+        %img.tools(src="images/wikipedia.png")            
+        %h2 Wikipedia 
+
+      %li
+        %img.tools(src="images/beaconr.png")            
+        %h2 Beaconr Wallpaper         
+
+      %li
+        %img.tools(src="images/pinkviewer.png")            
+        %h2 PinkViewer 
+
+      -#
+        %li.small
+          %img(src="images/spectrum.png")            
+          %h2 Spectrum 
+
+        %li.small
+          %img(src="images/spectrum.png")            
+          %h2 Spectrum   
+        
+        %li.small
+          %img(src="images/ubuntu.png")            
+          %h2 Ubuntu Phone Concept                      
+
+-#
+  %footer
+    .green
+      .center
+        .fifth.recent-thoughts 
+          /%img(src="/images/blog.png")
+          Recent Thoughts
+          %ul
+            %li 
+              %span •
+              Redesigning Hackernews
+            %li 
+              %span •
+              HTML5 canvas galaxy
+
+        .fifth.music
+          .equalizer
+            %ul.column
+              %li.bar
+            %ul.column
+              %li.bar
+            %ul.column
+              %li.bar
+            %ul.column
+              %li.bar
+            %ul.column
+              %li.bar
+              
+          .currently-listening 
+            %img(src="/images/play.png")
+            Currently listening
+          .title Atomic Man
+          .artist Portugal. The Man
+
+        .fifth.miles-run
+          %img(src="/images/running.png")
+          .last-run Last run
+          .number 2.5 mi
+
+        .fifth.tea
+          %img(src="/images/tea.png")
+          .cups-of-tea 
+            Cups of tea
+            .number 30
+          /klout score
 
 /%section.orange
       

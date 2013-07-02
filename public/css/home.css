@@ -1,3 +1,90 @@
+/*855*/
+
+/*-50*/
+
+.blog, .work {
+  background-color: #FFF;
+  position: relative;
+  top: 688px;
+  border-bottom: 1px solid rgb(232,232,232);
+}
+.work {
+  background-color: rgb(240,240,240);
+}
+.blog {
+  border-top: 1px solid rgba(0,0,0,.05);
+}
+
+.blog .center, .blog h1, .work .center, .work h1 {
+  padding: 0;
+}
+.blog .center, .work .center {
+  padding: 20px 0;
+}
+
+.blog h1, .blog h2, .blog h3 {
+  float: left;
+}
+.blog h1, .work h1 {
+  padding-bottom: 35px;
+}
+
+.blog h2, .blog h3 {
+  text-align: left;
+  width: 430px; 
+  line-height: 100%; 
+  padding-left: 20px;   
+}
+.blog h2 {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+}
+.blog h3 {
+  font-size: 16px;
+  color: #999;
+  font-weight: normal; 
+}
+
+
+.blog .title {
+  float: none;
+  font-size: 30px;
+}
+
+.blog li {
+  height: 200px;
+  margin-bottom: 30px;
+}
+/*.blog ul li:hover {
+  background-color: rgb(240,240,240);
+}*/
+.blog ul li img{
+  float: left;
+  width: 400px;
+}
+
+.small img {
+  width: 250px;
+}
+.small {
+  width: 250px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.tagline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.parallax {
+  padding: 4em;
+  position: relative;
+}
+
+
 .fifth {
   width: 25%;
   float: left;
@@ -38,7 +125,7 @@
   color:rgb(125,221,118);
 }
 
-.green {
+/*.green {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -47,19 +134,43 @@
 
   font-size: 16px;
   color: #333;
-  background-color: #FFF;/*rgb(48,48,48);*/
+  background-color: #FFF;
+}*/
+
+.green {
+  position: relative;
+  top: 687px;
+  height: 90px;
+
+  font-size: 16px;    
+  color: #FFF;
+  background-color: rgb(48,48,48);
 }
 
 button {
-  outline: none;
+  /*outline: none;
   background-color: transparent;
   border: 2px solid rgba(0,0,0,.2);
   padding: 9px 15px;
   border-radius: 3px;
   font-size: 12px;
-  cursor: pointer;
+  cursor: pointer;*/
+  outline: none;
+  padding: 9px 15px;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;  
+
+  background-color: #ccc;
+  color: #FFF;
+  border: none;  
 }
 
+.read-more {
+  float: left;
+  margin-left: 20px;
+  margin-top: 13px;  
+}
 
 
 
