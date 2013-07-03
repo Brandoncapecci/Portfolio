@@ -18,7 +18,7 @@ before do
 end
 
 get '/' do
-    @css = ['core', 'home', 'equalizer']
+    @css = ['core', 'home', 'equalizer', 'responsive']
     @js = ['jquery', 'home', 'parallax']    
     @title = "Brandon Capecci's Portfolio" 
     haml :posts

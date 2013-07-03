@@ -2,7 +2,7 @@
 
 /*-50*/
 
-.blog, .work {
+.blog, .work, .quote {
   background-color: #FFF;
   position: relative;
   top: 688px;
@@ -20,6 +20,14 @@
 }
 .blog .center, .work .center {
   padding: 20px 0;
+}
+
+.quote h1 {
+  padding: 40px;
+  font-style: italic;
+}
+.quote .author {
+  color: #999;
 }
 
 .blog h1, .blog h2, .blog h3 {
@@ -59,9 +67,26 @@
 /*.blog ul li:hover {
   background-color: rgb(240,240,240);
 }*/
+
 .blog ul li img{
   float: left;
   width: 400px;
+
+  /*-webkit-animation-name: scale-in;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-timing-function: cubic-bezier(0.56, -0.01, 0, 1);
+  -webkit-animation-delay: .4s;
+  -webkit-animation-fill-mode: both;  */
+}
+.slide-in {
+  float: left;
+  width: 450px;
+  
+  /*-webkit-animation-name: fadeInLeft;
+  -webkit-animation-duration: 1.1s;
+  -webkit-animation-timing-function: cubic-bezier(0.7, -0.005, .1, 1);
+  -webkit-animation-delay: .7s;
+  -webkit-animation-fill-mode: both;*/  
 }
 
 .small img {
@@ -209,7 +234,9 @@ nav ul li {
 
   /*8 - font none*/
 }
-
+nav ul li:last-child {
+  padding-right: 0;
+}
 
 nav {
   float: right;
@@ -225,4 +252,28 @@ nav {
 nav.open {
   /*right: 0;*/
   opacity: 1;
+}
+
+
+
+@-webkit-keyframes scale-in
+{
+    0% { 
+      opacity             : 0;
+      -webkit-transform   : scale(.05);
+    }
+    100% {
+      opacity             : 1;
+      -webkit-transform   : scale(1);
+    }
+}
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-90px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
 }

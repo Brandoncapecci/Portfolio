@@ -1,0 +1,44 @@
+@media all and (max-width: 855px) {
+    .center {
+      width: 90%;
+    }
+
+    .slide-in {
+        float: none;
+        width: auto;
+    }
+
+    .blog li {
+      height:auto; 
+      display:block;    
+    }
+
+    .blog h1, .blog h2, .blog h3 {
+      float: none;
+      padding-left: 0;
+      width: auto;
+    }
+    .blog h2 {
+      text-align: center;
+    }
+    .blog h3 {
+      text-align: left;
+    }
+
+    .blog ul li img {
+      float:none;
+      margin: 0 auto;
+      display: block;          
+    }    
+
+    .read-more {
+      float: none;
+    }
+
+
+    .parallax {
+      padding:0;
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+}

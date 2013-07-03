@@ -88,7 +88,7 @@ section {
 
 section .center {
     padding-top: 50px; 
-    padding-bottom: 50px;  
+    padding-bottom: 60px;  
     text-align: center;  
 }
 .green .center {
@@ -109,11 +109,12 @@ header {
 
 .center {
     position: relative;
-    /*width: 80%;*/
     width: 850px;
     margin: 0 auto;
-    min-width: 600px;
+    /*min-width: 600px;*/
+    min-width: 375px;
 }
+
 .tools {
     width: 100%;
 }
