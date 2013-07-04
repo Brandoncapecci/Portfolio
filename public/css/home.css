@@ -10,6 +10,7 @@
 }
 .work {
   background-color: rgb(240,240,240);
+  background-color: #f7f8f4;
 }
 .blog {
   border-top: 1px solid rgba(0,0,0,.05);
@@ -34,35 +35,45 @@
   float: left;
 }
 .blog h1, .work h1 {
-  padding-bottom: 35px;
+  margin-bottom: 30px;  
+  font-size: 19px;
+  float: none;  
+  font-weight: 600;
+
+
+  /*border-bottom: 1px dotted #ccc;  
+  height: 0px;
+  padding-bottom: 15px;*/
 }
+/*.title {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #FFF;  
+}*/
+
 
 .blog h2, .blog h3 {
   text-align: left;
   width: 430px; 
-  line-height: 100%; 
+  /*line-height: 100%; */
   padding-left: 20px;   
 }
 .blog h2 {
   font-size: 22px;
   color: #333;
   font-weight: 600;
+  line-height: 80%;    
 }
 .blog h3 {
-  font-size: 16px;
+  font-size: 15px;
   color: #999;
   font-weight: normal; 
 }
 
 
-.blog .title {
-  float: none;
-  font-size: 30px;
-}
-
 .blog li {
   height: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 /*.blog ul li:hover {
   background-color: rgb(240,240,240);
@@ -181,7 +192,7 @@ button {
   font-size: 12px;
   cursor: pointer;*/
   outline: none;
-  padding: 9px 15px;
+  padding: 6px 12px; /*9 15*/
   border-radius: 3px;
   font-size: 12px;
   cursor: pointer;  
@@ -194,7 +205,7 @@ button {
 .read-more {
   float: left;
   margin-left: 20px;
-  margin-top: 13px;  
+  margin-top: 17px;  
 }
 
 
@@ -230,7 +241,7 @@ nav ul li {
   font-size: 13px; /*16*/
   font-weight: 600;
   position: relative;
-  top: 1px;
+  /*top: 1px;*/
 
   /*8 - font none*/
 }

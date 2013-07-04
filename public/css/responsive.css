@@ -20,6 +20,7 @@
     }
     .blog h2 {
       text-align: center;
+      padding-top:10px;      
     }
     .blog h3 {
       text-align: left;
@@ -42,3 +43,5 @@
       padding-bottom: 60px;
     }
 }
+
+/*18*/
